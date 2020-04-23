@@ -21,7 +21,6 @@ def get_japanese_emoticon(file, emoticon)
   library.each_pair do |(word, symbols)|
     if symbols[:english] == emoticon
       translation = symbols[:japanese]
-      translation
     else 
       translation = "Nothing here."
     end
@@ -34,7 +33,6 @@ def get_english_meaning(file, emoticon)
   library.each_pair do |(word, symbols)|
     if symbols[:japanese] == emoticon
       meaning = word
-      meaning
     else
       meaning = "Nothing here."
     end
