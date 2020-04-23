@@ -24,10 +24,9 @@ def get_japanese_emoticon(file, emoticon)
     end
   end
   if !translation
-    p "Sorry, I don't know that one!"
-  else 
-    p translation
+    translation = "Sorry, I don't know that one!"
   end
+  p translation
 end
 
 def get_english_meaning(file, emoticon)
@@ -38,6 +37,7 @@ def get_english_meaning(file, emoticon)
     end
   end
   if !meaning
-    p "Sorry, I don't know that one!"
-  meaning
+    meaning = "Sorry, I don't know that one!"
+  end
+  p meaning
 end
