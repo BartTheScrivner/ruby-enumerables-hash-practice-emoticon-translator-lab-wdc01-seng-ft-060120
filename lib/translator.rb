@@ -19,14 +19,15 @@ end
 def get_japanese_emoticon(file, emoticon)
   library = load_library(file)
   library.each_pair do |(word, symbols)|
+    if library.include?(emoticon) == false
+      p "Sorry, I don't know that one."
+    end
     if symbols[:english] == emoticon
       translation = symbols[:japanese]
-      binding.pry
       translation
     end
-    binding.pry
-  p translation
   end
+  translation
 end
 
 def get_english_meaning
