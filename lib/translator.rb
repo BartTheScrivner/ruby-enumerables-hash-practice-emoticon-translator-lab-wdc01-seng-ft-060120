@@ -26,7 +26,9 @@ def get_japanese_emoticon(file, emoticon)
   end
   if translation == nil
     p "Sorry, I don't know that one!"
-  translation
+  else 
+    p translation
+  end
 end
 
 def get_english_meaning(file, emoticon)
