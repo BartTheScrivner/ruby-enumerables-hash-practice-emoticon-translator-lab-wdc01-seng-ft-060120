@@ -16,8 +16,9 @@ def load_library(url)
   pretty_lib
 end
 
-def get_japanese_emoticon(url, emoticon)
-  library = load_library(url)
+def get_japanese_emoticon(file, emoticon)
+  library = load_library(file)
+  library
   binding.pry
   
 end
