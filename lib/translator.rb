@@ -18,6 +18,7 @@ end
 
 def get_japanese_emoticon(url, emoticon)
   load_library(url)
+  binding.pry
   
 end
 
