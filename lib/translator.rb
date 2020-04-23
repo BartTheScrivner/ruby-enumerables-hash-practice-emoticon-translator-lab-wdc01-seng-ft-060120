@@ -18,7 +18,8 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   library = load_library(file)
-  library
+  library.each_pair do |(word, symbols)|
+    if symbols[0] = emoticon
   binding.pry
   
 end
