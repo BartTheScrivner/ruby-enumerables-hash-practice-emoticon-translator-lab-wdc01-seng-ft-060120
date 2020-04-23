@@ -23,7 +23,6 @@ def get_japanese_emoticon(file, emoticon)
       p symbols[1]
     end
   end
-  binding.pry
 end
 
 def get_english_meaning
