@@ -23,9 +23,8 @@ def get_japanese_emoticon(file, emoticon)
       translation = symbols[:japanese]
       translation
     end
-    translation
   end
-  translation
+  p translation
 end
 
 def get_english_meaning
