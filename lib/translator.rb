@@ -22,6 +22,7 @@ def get_japanese_emoticon(file, emoticon)
     if symbols[:english] == emoticon
       translation = symbols[:japanese]
       translation
+      binding.pry
       break
     end
   end
