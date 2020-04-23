@@ -24,7 +24,7 @@ def get_japanese_emoticon(file, emoticon)
       translation = symbols[:japanese]
     end
   end
-  if translation == nil
+  if !translation
     p "Sorry, I don't know that one!"
   else 
     p translation
