@@ -37,5 +37,7 @@ def get_english_meaning(file, emoticon)
       meaning = word
     end
   end
+  if !meaning
+    p "Sorry, I don't know that one!"
   meaning
 end
