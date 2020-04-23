@@ -23,7 +23,7 @@ def get_japanese_emoticon(file, emoticon)
       translation = symbols[:japanese]
     end
   end
-  if !translation
+  if translation == nil
     translation = "Sorry, I don't know that one!"
   end
   p translation
@@ -36,7 +36,7 @@ def get_english_meaning(file, emoticon)
       meaning = word
     end
   end
-  if !meaning
+  if meaning == nil
     meaning = "Sorry, I don't know that one!"
   end
   p meaning
