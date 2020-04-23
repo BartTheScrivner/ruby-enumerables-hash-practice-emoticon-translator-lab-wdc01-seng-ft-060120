@@ -18,24 +18,26 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   library = load_library(file)
-  translation = library.each_pair do |(word, symbols)|
+  translation = ""
+  library.each_pair do |(word, symbols)|
     if symbols[:english] == emoticon
       translation = symbols[:japanese]
     else 
-      translation = "Nothing here."
+      translation = "Sorry, that emoticon was not found"
     end
   end
-  p translation
+  translation
 end
 
 def get_english_meaning(file, emoticon)
   library = load_library(file)
-  meaning = library.each_pair do |(word, symbols)|
+  meaning = ""
+  library.each_pair do |(word, symbols)|
     if symbols[:japanese] == emoticon
       meaning = word
     else
-      meaning = "Nothing here."
+      meaning = "Sorry, that emoticon was not found"
     end
   end
-  p meaning
+  meaning
 end
