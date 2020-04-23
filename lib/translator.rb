@@ -24,7 +24,6 @@ def get_japanese_emoticon(file, emoticon)
     else 
       translation = "Nothing here."
     end
-    translation
   end
   p translation
 end
@@ -37,7 +36,6 @@ def get_english_meaning(file, emoticon)
     else
       meaning = "Nothing here."
     end
-    meaning
   end
   p meaning
 end
