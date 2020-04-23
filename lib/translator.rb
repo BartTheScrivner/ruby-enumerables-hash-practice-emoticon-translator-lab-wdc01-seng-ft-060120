@@ -19,8 +19,8 @@ end
 def get_japanese_emoticon(file, emoticon)
   library = load_library(file)
   library.each_pair do |(word, symbols)|
-    if symbols[:english] = emoticon
-      p symbols[:japanese]
+    if word[symbols][:english] = emoticon
+      p word[symbols][:japanese]
     end
   end
 end
